@@ -3,6 +3,7 @@ import Home from "./Home/Home";
 import Products from "./Products/Products";
 import Orders from "./Orders/Orders";
 import OrderDetail from "./Orders/OrderDetail";
+import Payment from "./Payment/Payment";
 import "./App.css";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                 <Link to="/">Home</Link>
                 <Link to="/catalog">Catalog</Link>
                 <Link to="/orders">Orders</Link>
+                <Link to="/payment">Payment</Link>
               </div>
             </header>
             <aside className="sidebar">
@@ -51,7 +53,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/catalog" element={<Products />} />
-                <Route path="orders" element={<Orders />}></Route>
+                <Route path="/orders" element={<Orders />}></Route>
+                <Route path="/payment" element={<Payment />}></Route>
                 <Route path="/order/:id" element={<OrderDetail />}></Route>
               </Routes>
             </main>
