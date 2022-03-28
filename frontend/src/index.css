@@ -211,5 +211,5 @@ input {
 }
 
 .notShipped {
-  background-color: red;
+  background-color: red !important;
 }
