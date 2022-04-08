@@ -15,5 +15,4 @@ describe('The main app', () => {
     expect(screen.getByRole('link', { name: "Home" })).toBeInTheDocument();
   });
 
-
 });
