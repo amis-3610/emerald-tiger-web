@@ -20,7 +20,7 @@ function Products() {
     = useState(emptyProducts);
 
   useEffect(() => {
-    axios.get<Product[]>("https://emerald-tiger-api.azurewebsites.net/catalog",
+    axios.get<Product[]>("https://localhost:7250/catalog",
       {
         headers: {
           "Content-Type": "application/json",
